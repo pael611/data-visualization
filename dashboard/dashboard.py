@@ -7,9 +7,12 @@ sns.set(style='dark')
 st.header('Dashboard')
 
 # Import dataset yang akan kita gunakan (csv)
-df1 = pd.read_csv('dongsi.csv')
-df2 = pd.read_csv('shunyi.csv')
-
+uploaded_file1 = st.file_uploader("dongsi.csv", type="csv")
+if uploaded_file1 is not None:
+    df1 = pd.read_csv(uploaded_file)
+uploaded_file2 = st.file_uploader("shunyi.csv", type="csv")
+if uploaded_file2 is not None:
+    df2 = pd.read_csv(uploaded_file)
 # Menampilkan dataset
 st.subheader('Dataset Dongsi')
 st.write(df1)
