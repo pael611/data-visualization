@@ -7,8 +7,8 @@ sns.set(style='dark')
 st.header('Dashboard')
 
 # Import dataset yang akan kita gunakan (csv)
-df1 = pd.read_csv('dashboard/Dongsi.csv')
-df2 = pd.read_csv('dashboard/Shunyi.csv')
+df1 = pd.read_csv('dongsi.csv')
+df2 = pd.read_csv('shunyi.csv')
 
 # Menampilkan dataset
 st.subheader('Dataset Dongsi')
